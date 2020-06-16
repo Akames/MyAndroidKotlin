@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.akame.jetpack">
+
+    <application>
+        <activity android:name=".ui.GirlActivity"></activity>
+        <activity android:name=".ui.ImageActivity" />
+        <activity android:name=".ui.NavigationActivity" />
+        <activity android:name=".ui.ViewPage2Activity" />
+        <activity android:name=".ui.ScrollingActivity" />
+        <activity android:name=".ui.StatueTestActivity" />
+        <activity android:name=".ui.JetPackActivity" />
+    </application>
+
+</manifest>

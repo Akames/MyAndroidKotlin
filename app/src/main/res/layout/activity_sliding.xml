@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.akame.myandroid_kotlin.MyScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SlidingActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            app:cardBackgroundColor="#ff00"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="20dp">
+
+
+        </androidx.cardview.widget.CardView>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@mipmap/ic_test" />
+
+        <com.akame.myandroid_kotlin.MyListView
+            android:id="@+id/lv_data"
+            android:layout_width="match_parent"
+            android:layout_height="300dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="40dp"
+            android:text="很好饭匡姐疯狂的喝咖啡的了是返回i推荐噶开噶其实今天我非常薄的都不开心 为什么大家都有工作我而我没有工作 我好像回到以前的那种噶感觉其实每个都需要成长对白" />
+    </LinearLayout>
+
+</com.akame.myandroid_kotlin.MyScrollView>

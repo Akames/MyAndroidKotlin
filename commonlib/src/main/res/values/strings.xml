@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">PraiseLibrary</string>
+    <string name="http_error">network anomaly</string>
+    <string name="unKnown_error">unKnown error</string>
+    <string name="not_network_prompt2">网络不给力，请刷新重试</string>
+    <string name="not_network_prompt1">服务器不稳定，请刷新重试</string>
+    <string name="empty_data_prompt">暂无数据</string>
+    <string name="loading_date">数据加载中...</string>
+</resources>

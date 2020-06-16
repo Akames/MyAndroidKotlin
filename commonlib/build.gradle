@@ -1,0 +1,84 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            signingConfig signingConfigs.debug
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation rootProject.ext.dependcies.appcompat
+    implementation rootProject.ext.dependcies.constraintLayout
+    //    implementation rootProject.ext.dependcies.recyclerView
+    //net
+    api rootProject.ext.dependcies.gson
+    api rootProject.ext.dependcies.okhttp
+    api rootProject.ext.dependcies.okhttLoggin
+    api rootProject.ext.dependcies.retrofit2
+    api rootProject.ext.dependcies.converterGson
+    api rootProject.ext.dependcies.retrofit2AdapterRxjava2
+    api rootProject.ext.dependcies.scalars
+    //将retrofit回传的json转化成String
+    //image
+    api rootProject.ext.dependcies.glide
+    annotationProcessor rootProject.ext.dependcies.glideCompiler
+    api rootProject.ext.dependcies.transformations
+    //rx
+    api rootProject.ext.dependcies.rxjava
+    api rootProject.ext.dependcies.rxandroid
+    api rootProject.ext.dependcies.rxbinding
+    api rootProject.ext.dependcies.rxpermissions
+    //di
+    implementation rootProject.ext.dependcies.butterknife
+    annotationProcessor rootProject.ext.dependcies.butterknifeCompiler
+    //canary
+    debugImplementation rootProject.ext.dependcies.leakcanaryAndroid
+    releaseImplementation rootProject.ext.dependcies.androidNoOp
+    testImplementation rootProject.ext.dependcies.androidNoOp
+    //statusBar
+    api rootProject.ext.dependcies.statusbarutil
+    //refresh
+    api rootProject.ext.dependcies.smartRefreshLayout
+    //event
+    api rootProject.ext.dependcies.eventbus
+    //banner
+    api rootProject.ext.dependcies.banner
+    //logger
+    api rootProject.ext.dependcies.logger
+    //diskCache 磁盘缓存
+    api rootProject.ext.dependcies.disklrucache
+    //时间地区选择器
+    api rootProject.ext.dependcies.PickerView
+    //布局适配
+    //api rootProject.ext.dependcies.autosize
+    //loading 提示加载
+    api rootProject.ext.dependcies.loadingView
+    //google 二维码成器
+    api rootProject.ext.dependcies.zxing
+    //图片查看器
+    api rootProject.ext.dependcies.imageWatch
+    //腾讯X5 内核WebView
+    api files('lib/lib_webX5.jar')
+//    api rootProject.ext.dependcies.smartRefreshLayoutHead
+    //图片颜色获取
+    api 'com.github.florent37:glidepalette:2.1.2'
+}

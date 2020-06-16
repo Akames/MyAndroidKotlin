@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_loading"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <com.akame.videoplay.unit.MyProgressView
+        android:id="@+id/my_Progress"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/my_Progress"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:text="正在缓冲..."
+        android:textColor="#FFF" />
+</RelativeLayout>
